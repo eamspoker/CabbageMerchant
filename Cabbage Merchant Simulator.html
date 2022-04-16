@@ -11,8 +11,20 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Cabbage Merchant Simulator" startnode="1" creator="Twine" creator-version="2.3.8" ifid="956254D6-9BEB-40FE-B690-9FB28E7F259D" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Starting Passage" tags="" position="835,189" size="100,100">You are a youthful and bright-eyed new 
-click [[Here -&gt; Next Passage]]</tw-passagedata><tw-passagedata pid="2" name=" Next Passage" tags="" position="835,339" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+<tw-storydata name="Cabbage Merchant Simulator" startnode="1" creator="Twine" creator-version="2.3.8" ifid="956254D6-9BEB-40FE-B690-9FB28E7F259D" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+    display: none;
+}
+
+body {
+  background-color: coral;
+  color: white;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Starting Passage" tags="" position="839,195" size="100,100">(set: $money to 0) 
+##### Money : $money
+You are a youthful and bright-eyed new cabbage merchant. With no money to your name, but an undying love for *Brassica oleracea* in all its leafy green glory, you embark on your journey to become a cabbage mogul!
+Where do you go first?
+[[South to Omashu -&gt; Omashu]]
+[[North to the Seedy Merchant&#39;s Pier -&gt; Seedy Merchant&#39;s Pier]]
+[[West to the Serpent&#39;s Pass -&gt; the Serpent&#39;s Pass]] *and what lies beyond*</tw-passagedata><tw-passagedata pid="2" name=" Omashu" tags="" position="688,345" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="3" name=" Seedy Merchant&#39;s Pier" tags="" position="839,459" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="4" name=" the Serpent&#39;s Pass" tags="" position="989,344" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
