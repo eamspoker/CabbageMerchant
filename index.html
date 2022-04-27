@@ -19,11 +19,14 @@ tw-story {
   font-family: Herculanum;
 }
 
-tw-link {
+.visited {
 
   color: white;
 }
 
+tw-link {
+  color: white;
+}
 tw-hook[name="fade-out"] {
 	-webkit-animation-name: fade-out;
 	-webkit-animation-duration: 3s;
@@ -41,7 +44,7 @@ tw-hook[name="fade-out"] {
 (after:2s)[(transition: &quot;fade-down&quot;)[Your first customer of the day is a scary-looking old man, but he buys four cabbages with a polite smile and an extra silver to boot! You didn&#39;t catch his name, but you&#39;re pretty sure the young boy with him called him &quot;Uncle&quot;.]]
 
 (after:3s)[(transition: &quot;fade-down&quot;)[[[Next customer, please! -&gt; SMP Selling Regular day]]]]</tw-passagedata><tw-passagedata pid="2" name=" SMP Selling Regular day" tags="" position="729,918" size="100,100">(set: $num_cabbages to (random:1,10))\
-(set: $avatar_probability to $avatar_probability +14)\
+(set: $avatar_probability to $avatar_probability +10)\
 (after:1s)[(transition: &quot;fade-down&quot;)[Behold, another customer! Looks like they want $num_cabbages cabbage(s).]]
 
 {[(if:$num_cabbages is 1)[= (after:2s)[(transition: &quot;fade-down&quot;)[Obviously they don&#39;t have any friends; cabbages are meant to be shared!]]] [(if:$num_cabbages is 8)[=  (after:2s)[(transition: &quot;fade-down&quot;)[Wow, what a sale!]]]
@@ -101,9 +104,9 @@ you need to move to another city. Where to next?]
 
 (after:3s)[(transition: &quot;fade-down&quot;)[[[Next customer! -&gt; BSS Selling Regular Day]]]]
 
-(set: $money to 100)</tw-passagedata><tw-passagedata pid="8" name=" BSS Selling Regular Day" tags="" position="1094,914" size="100,100">(set: $num_cabbages to (random:1,10))
+(set: $money to 100)</tw-passagedata><tw-passagedata pid="8" name=" BSS Selling Regular Day" tags="" position="1095,914" size="100,100">(set: $num_cabbages to (random:1,10))
 (set: $avatar_appears to (random:1,15))
-(set: $avatar_probability to $avatar_probability + 21)\
+(set: $avatar_probability to $avatar_probability + 15)\
 
 (after:1s)[(transition: &quot;fade-down&quot;)[Another customer appears! They want to buy $num_cabbages cabbages.]]
 
@@ -194,7 +197,7 @@ Where do you go first?
 
 (after:3s)[(transition: &quot;fade-down&quot;)[[[Next customer, please! -&gt; Omashu Regular Selling Day]]]]</tw-passagedata><tw-passagedata pid="21" name=" Omashu Regular Selling Day" tags="" position="191,856" size="100,100">(set: $money to (round: 1.05*($money + 1*$num_cabbages)))\
 (set: $day to $day +1)\
-(set: $avatar_probability to $avatar_probability + 7)\
+(set: $avatar_probability to $avatar_probability + 5)\
 (set: $num_cabbages to (random:1,10))
 
 (after:1s)[(transition: &quot;fade-down&quot;)[Behold, another customer! Looks like they want $num_cabbages cabbage(s).]]
@@ -248,7 +251,7 @@ Where do you go first?
 (t8n:&quot;fade-down&quot;)+(t8n-delay:5s)[Well, at least none of your cabbages were destroyed!]
 (t8n:&quot;fade-down&quot;)+(t8n-delay:6s)[[[The ferry pulls into the city port, and you gaze upon Ba Sing Se -&gt; Ba Sing Se]]]</tw-passagedata><tw-passagedata pid="29" name="SP Lose 2" tags="" position="586,971" size="100,100">(set: $money to $money- (round: 0.5*$money))
 (after:1s)[(transition: &quot;fade-down&quot;)[Your heart pounds in your chest as the guards begin to inspect your cart.]]
-(after:2s)[(transition: &quot;fade-down&quot;)[&quot;Found one, boss!&quot; one of the guards yells as he triumphantly holds up a wriggling slug, as the passport attendant waves dissmissively at your cart of cabbages and you watch in horror as your cart is destroyed by a large platypus-bear.]]
+(after:2s)[(transition: &quot;fade-down&quot;)[&quot;Found one, boss!&quot; one of the guards yells as he triumphantly holds up a wriggling slug. The passport attendant waves dissmissively at your cart of cabbages and you watch in horror as your cart is destroyed by a large platypus-bear.]]
 (after:4s)[(transition: &quot;fade-down&quot;)[You could try tomorrow to convince her, or you could journey to another city.]]
 (after:6s)[(for: each _location, ...$available)+(transition: &quot;fade-down&quot;)[[[_location -&gt;_location]]
 ]]</tw-passagedata><tw-passagedata pid="30" name="SP Lose 3" tags="" position="340,1156" size="100,100">(set: $money to $money- (round: 0.5*$money))
