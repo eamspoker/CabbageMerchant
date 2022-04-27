@@ -45,6 +45,7 @@ tw-hook[name="fade-out"] {
 
 (after:3s)[(transition: &quot;fade-down&quot;)[[[Next customer, please! -&gt; SMP Selling Regular day]]]]</tw-passagedata><tw-passagedata pid="2" name=" SMP Selling Regular day" tags="" position="729,918" size="100,100">(set: $num_cabbages to (random:1,10))\
 (set: $avatar_probability to $avatar_probability +10)\
+
 (after:1s)[(transition: &quot;fade-down&quot;)[Behold, another customer! Looks like they want $num_cabbages cabbage(s).]]
 
 {[(if:$num_cabbages is 1)[= (after:2s)[(transition: &quot;fade-down&quot;)[Obviously they don&#39;t have any friends; cabbages are meant to be shared!]]] [(if:$num_cabbages is 8)[=  (after:2s)[(transition: &quot;fade-down&quot;)[Wow, what a sale!]]]
@@ -104,7 +105,7 @@ you need to move to another city. Where to next?]
 
 (after:3s)[(transition: &quot;fade-down&quot;)[[[Next customer! -&gt; BSS Selling Regular Day]]]]
 
-(set: $money to 100)</tw-passagedata><tw-passagedata pid="8" name=" BSS Selling Regular Day" tags="" position="1095,914" size="100,100">(set: $num_cabbages to (random:1,10))
+(set: $money to $money + 100)</tw-passagedata><tw-passagedata pid="8" name=" BSS Selling Regular Day" tags="" position="1095,914" size="100,100">(set: $num_cabbages to (random:1,10))
 (set: $avatar_appears to (random:1,15))
 (set: $avatar_probability to $avatar_probability + 15)\
 
@@ -190,7 +191,7 @@ Where do you go first?
 (after:2s)[(transition: &quot;fade-down&quot;)[Now that you can afford it, you decide to establish the Cabbage Delicacies Bistro to spread your love for cabbage-inspired food... and to keep your cabbages safe of course ;)]]
 
 (after:3s)[(transition: &quot;fade-down&quot;)[&lt;img src=&quot;https://i1.sndcdn.com/artworks-30e7yhMTkkRpvkEw-00Pnzw-t500x500.jpg&quot;&gt;]]</tw-passagedata><tw-passagedata pid="20" name="Omashu Selling First Day" tags="" position="270,683" size="100,100">(set: $day to $day +1)\
-(set: $money to 30)\
+(set: $money to $money + 30)\
 (after:1s)[(transition: &quot;fade-down&quot;)[It&#39;s your first morning selling cabbages at the Pier.]]
 
 (after:2s)[(transition: &quot;fade-down&quot;)[Your first customer of the day is an old man who shuffles towards your stand, covered in a green cloak. He grins a wild-eyed smile as he begins to sniff each of your cabbages. He eventually selects three, throws some coins at you, and runs cackling off into the distance.]]
