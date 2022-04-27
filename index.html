@@ -120,8 +120,7 @@ you need to move to another city. Where to next?]
 (if: $money is &gt; 10000)[(after:3s)[(transition: &quot;fade-down&quot;)[[[Wow, you&#39;ve earned a lot of money! -&gt; BSS Winning]]]]]
 (elseif:$avatar_probability &lt; (random:1,100))[(after:3s)[(transition: &quot;fade-down&quot;)
 [[[Next customer, please! -&gt; BSS Selling Regular Day]]]]]
-(else:)[(after:3s)[(transition: &quot;fade-down&quot;)[[[[Next customer, please! -&gt; BSS Destroyed by the Avatar]]]]]]</tw-passagedata><tw-passagedata pid="9" name=" BSS Destroyed by the Avatar" tags="" position="1091,1135" size="100,100">##### &#39;&#39;Money : $money&#39;&#39;
-
+(else:)[(after:3s)[(transition: &quot;fade-down&quot;)[[[[Next customer, please! -&gt; BSS Destroyed by the Avatar]]]]]]</tw-passagedata><tw-passagedata pid="9" name=" BSS Destroyed by the Avatar" tags="" position="1091,1135" size="100,100">
 (after:1s)[(transition: &quot;fade-down&quot;)[Gloating over your prosperity, you look away from your cabbages for a split second, lost in your dreams of ambition.]]
 
 (after:2s)[(transition: &quot;fade-down&quot;)[Suddenly, a powerful gust of wind blows you off your feet--it&#39;s the Avatar!]]
