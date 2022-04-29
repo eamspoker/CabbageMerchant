@@ -44,7 +44,7 @@ tw-hook[name="fade-out"] {
 (after:2s)[(transition: &quot;fade-down&quot;)[Your first customer of the day is a scary-looking old man, but he buys four cabbages with a polite smile and an extra silver to boot! You didn&#39;t catch his name, but you&#39;re pretty sure the young boy with him called him &quot;Uncle&quot;.]]
 
 (after:3s)[(transition: &quot;fade-down&quot;)[[[Next customer, please! -&gt; SMP Selling Regular day]]]]</tw-passagedata><tw-passagedata pid="2" name=" SMP Selling Regular day" tags="" position="729,918" size="100,100">(set: $num_cabbages to (random:1,10))\
-(set: $avatar_probability to $avatar_probability +10)\
+(set: $avatar_probability to $avatar_probability + 7)\
 
 (after:1s)[(transition: &quot;fade-down&quot;)[Behold, another customer! Looks like they want $num_cabbages cabbage(s).]]
 
@@ -107,7 +107,7 @@ you need to move to another city. Where to next?]
 
 (set: $money to $money + 100)</tw-passagedata><tw-passagedata pid="8" name=" BSS Selling Regular Day" tags="" position="1095,914" size="100,100">(set: $num_cabbages to (random:1,10))
 (set: $avatar_appears to (random:1,15))
-(set: $avatar_probability to $avatar_probability + 15)\
+(set: $avatar_probability to $avatar_probability + 10)\
 
 (after:1s)[(transition: &quot;fade-down&quot;)[Another customer appears! They want to buy $num_cabbages cabbages.]]
 
